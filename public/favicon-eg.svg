@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="E│G monogram">
+  <rect width="64" height="64" fill="#ffffff"/>
+  <g fill="#0d2c54" font-family="Inter, Avenir, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle" dominant-baseline="middle">
+    <text x="19" y="35">E</text>
+    <text x="32" y="35">│</text>
+    <text x="45" y="35">G</text>
+  </g>
+</svg>
