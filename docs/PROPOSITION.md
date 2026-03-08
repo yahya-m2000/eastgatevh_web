@@ -1,15 +1,13 @@
-# EASTGATE Website Proposition (v5)
+# EVH Website Proposition (v4)
 
 ## Brand Direction
-- Secondary brand mark: minimal institutional monogram `E│G` (favicon + optional footer use).
-- **Name treatment:** EASTGATE as the public-facing brand, with Eastgate Venture Holdings Ltd retained for legal references only.
+- **Name treatment:** Eastgate Venture Holdings (EVH) with EVH as primary brand mark.
 - **Tone:** Corporate and investment-grade with a human, ethical, founder-supportive voice.
 - **Visual style:** Professional sans-serif typography, restrained palette, high readability, modular card-based layout.
 
 ## Information Architecture (Launch)
 - Home
 - About
-- Founder Partnerships
 - Investment Model
 - Regions
 - Portfolio
@@ -19,7 +17,7 @@
 
 ## UX Priorities
 1. Attract founders in Africa/Asia undercapitalised markets
-2. Showcase portfolio credibility and EASTGATE operating model
+2. Showcase portfolio credibility and EVH operating model
 3. Build confidence with co-investors and strategic partners
 
 ## CTA Strategy
@@ -27,10 +25,9 @@
 - Secondary conversion point: enquiry form on Contact page
 
 ## Build Progress (Current)
-- Home now follows a narrative-first order: Hero, What EASTGATE does, Investment model overview, Founder journey timeline, Regions focus, Portfolio preview, Key statistics, and Contact CTA.
+- Home includes key metrics, founder journey timeline, and founder-specific CTA block.
 - Portfolio includes region filtering for quicker discovery.
-- Investment Model details practical EASTGATE operating capabilities.
-- Founder Partnerships page explains the founder-operating partnership model, support pillars, and journey timeline.
+- Investment Model details practical EVH operating capabilities.
 - Team and Insights include structured placeholder card layouts.
 - Contact includes lightweight client-side validation and form feedback.
 - All pages now set page-level metadata (title + description) through a reusable SEO component.

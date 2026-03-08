@@ -15,7 +15,7 @@ const RegionsPage = () => (
 
     <ContentSection
       title="Sector orientation"
-      intro="EASTGATE prioritises sectors where operational support and strategic capital can generate broad-based market impact."
+      intro="EVH prioritises sectors where operational support and strategic capital can generate broad-based market impact."
     >
       <ul>
         <li>Financial inclusion and critical business services</li>

@@ -16,7 +16,7 @@ const InvestmentModelPage = () => (
 
     <ContentSection
       title="Where we add value"
-      intro="EASTGATE combines capital with practical capabilities that improve operating quality and speed of execution."
+      intro="EVH combines capital with practical capabilities that improve operating quality and speed of execution."
     >
       <CardGrid items={modelCapabilities} />
     </ContentSection>

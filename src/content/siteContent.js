@@ -1,6 +1,5 @@
 export const navLinks = [
   { label: 'About', path: '/about' },
-  { label: 'Founder Partnerships', path: '/founder-partnerships' },
   { label: 'Investment Model', path: '/investment-model' },
   { label: 'Regions', path: '/regions' },
   { label: 'Portfolio', path: '/portfolio' },
@@ -11,54 +10,49 @@ export const navLinks = [
 
 export const pageMeta = {
   home: {
-    title: 'EASTGATE | Venture Builder',
+    title: 'EVH | Eastgate Venture Holdings',
     description:
-      'EASTGATE is a UK venture builder backing founders in undercapitalised markets across Africa and Asia.',
+      'Eastgate Venture Holdings is a UK venture builder backing founders in undercapitalised markets across Africa and Asia.',
   },
   about: {
-    title: 'About EASTGATE | Venture Builder',
+    title: 'About EVH | Eastgate Venture Holdings',
     description:
-      'Learn about EASTGATE’s mission, values, and long-term founder partnership approach to venture building.',
-  },
-  founderPartnerships: {
-    title: 'Founder Partnerships | EASTGATE',
-    description:
-      'See how EASTGATE partners with founders through capital, operational support, and execution discipline in emerging markets.',
+      'Learn about EVH's mission, values, and long-term founder partnership approach to venture building.',
   },
   investmentModel: {
-    title: 'Investment Model | EASTGATE',
+    title: 'Investment Model | EVH',
     description:
-      'Explore EASTGATE’s invest-build-scale model combining capital discipline with practical operating support.',
+      'Explore EVH's invest-build-scale model combining capital discipline with practical operating support.',
   },
   regions: {
-    title: 'Regions | EASTGATE',
+    title: 'Regions | EVH',
     description:
-      'Discover EASTGATE’s regional focus across developing markets in Africa and Asia.',
+      'Discover EVH's regional focus across developing markets in Africa and Asia.',
   },
   portfolio: {
-    title: 'Portfolio | EASTGATE',
+    title: 'Portfolio | EVH',
     description:
-      'View representative EASTGATE portfolio placeholders across sectors and regions.',
+      'View representative EVH portfolio placeholders across sectors and regions.',
   },
   team: {
-    title: 'Team | EASTGATE',
+    title: 'Team | EVH',
     description:
-      'Meet the EASTGATE team combining investment expertise and operating execution support.',
+      'Meet the EVH team combining investment expertise and operating execution support.',
   },
   insights: {
-    title: 'Insights | EASTGATE',
+    title: 'Insights | EVH',
     description:
-      'Read EASTGATE insights on venture building, ethical growth, and market development.',
+      'Read EVH insights on venture building, ethical growth, and market development.',
   },
   contact: {
-    title: 'Contact Us | EASTGATE',
+    title: 'Contact Us | EVH',
     description:
-      'Get in touch with EASTGATE for founder partnerships, co-investment, or strategic collaboration.',
+      'Get in touch with EVH for founder partnerships, co-investment, or strategic collaboration.',
   },
 };
 
 export const hero = {
-  eyebrow: 'EASTGATE',
+  eyebrow: 'Eastgate Venture Holdings (EVH)',
   title: 'A venture builder backing founders in undercapitalised markets across Africa and Asia.',
   subtitle:
     'We pair institutional investment discipline with practical operating support to help businesses scale responsibly and endure.',
@@ -177,21 +171,9 @@ export const insightPosts = [
   },
 ];
 
-
-export const homeContactCta = {
-  title: 'Ready to build with EASTGATE?',
-  body: 'If you are a founder building in an undercapitalised market, EASTGATE offers aligned investment and hands-on operating support to help you scale responsibly.',
-  bullets: [
-    'Founder-aligned capital and long-term partnership',
-    'Practical operating support across strategy, execution, and governance',
-    'A clear path from diligence to sustainable scaling',
-  ],
-  cta: { label: 'Contact Us', path: '/contact' },
-};
-
 export const founderCtaBlock = {
   title: 'Built for founders solving hard market problems',
-  body: 'EASTGATE is designed for operators who value aligned capital, strategic challenge, and long-term partnership.',
+  body: 'EVH is designed for operators who value aligned capital, strategic challenge, and long-term partnership.',
   bullets: [
     'Hands-on support across strategy, operating rhythm, and governance',
     'Ethical and measurable approach to growth in developing regions',
@@ -199,37 +181,6 @@ export const founderCtaBlock = {
   ],
   cta: { label: 'Contact Us', path: '/contact' },
 };
-
-
-export const founderSupportAreas = [
-  {
-    title: 'Operating cadence design',
-    body: 'We help founders establish execution rhythms, KPI discipline, and decision-making clarity across teams.',
-  },
-  {
-    title: 'Commercial acceleration',
-    body: 'We support go-to-market execution, channel strategy, and customer economics to improve growth quality.',
-  },
-  {
-    title: 'Leadership and governance',
-    body: 'We work with founders to strengthen management structures, board practices, and accountability systems.',
-  },
-];
-
-export const founderPartnershipModel = [
-  {
-    title: 'Aligned investment structuring',
-    body: 'Capital structures are designed to support long-term founder ownership and responsible scaling decisions.',
-  },
-  {
-    title: 'Hands-on operational support',
-    body: 'Operating partners work alongside founders to turn strategic priorities into measurable execution plans.',
-  },
-  {
-    title: 'Scale readiness',
-    body: 'We prepare companies for growth through governance maturity, talent systems, and performance visibility.',
-  },
-];
 
 export const contactDetails = {
   email: 'partnerships@evh.example',

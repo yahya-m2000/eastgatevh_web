@@ -7,7 +7,7 @@ const InsightsPage = () => (
     <Seo {...pageMeta.insights} />
     <ContentSection
       title="Insights"
-      intro="EASTGATE perspectives on venture building, market development, and ethical investment execution."
+      intro="EVH perspectives on venture building, market development, and ethical investment execution."
     >
       <div className="insight-list">
         {insightPosts.map((post) => (

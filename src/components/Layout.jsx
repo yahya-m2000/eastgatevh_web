@@ -14,8 +14,8 @@ const Layout = () => {
     <div className="site-shell">
       <header className="site-header">
         <div className="header-top-row">
-          <NavLink to="/" className="brand-mark" aria-label="EASTGATE home">
-            EASTGATE
+          <NavLink to="/" className="brand-mark" aria-label="EVH home">
+            EVH
           </NavLink>
 
           <button
@@ -54,11 +54,7 @@ const Layout = () => {
       </main>
 
       <footer className="site-footer">
-        <div className="footer-brand">
-          <span className="footer-monogram" aria-hidden="true">E│G</span>
-          <span className="footer-wordmark">EASTGATE</span>
-        </div>
-        <p>© {new Date().getFullYear()} Eastgate Venture Holdings Ltd. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Eastgate Venture Holdings (EVH). All rights reserved.</p>
       </footer>
     </div>
   );

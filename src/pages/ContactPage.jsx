@@ -58,7 +58,7 @@ const ContactPage = () => {
       <Seo {...pageMeta.contact} />
       <ContentSection
         title="Contact Us"
-        intro="For founders, co-investors, and strategic partners interested in working with EASTGATE."
+        intro="For founders, co-investors, and strategic partners interested in working with EVH."
       >
         <ul className="contact-list">
           <li>
@@ -71,12 +71,11 @@ const ContactPage = () => {
             <strong>Location:</strong> {contactDetails.location}
           </li>
         </ul>
-        <p className="legal-note"><strong>Legal entity:</strong> Eastgate Venture Holdings Ltd.</p>
       </ContentSection>
 
       <ContentSection
         title="Initial enquiry"
-        intro="Share a short overview and EASTGATE will respond with next steps."
+        intro="Share a short overview and EVH will respond with next steps."
       >
         <form className="contact-form" onSubmit={handleSubmit} noValidate>
           <label>

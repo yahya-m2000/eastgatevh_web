@@ -6,11 +6,10 @@ import Seo from '../components/Seo';
 import StatStrip from '../components/StatStrip';
 import Timeline from '../components/Timeline';
 import {
+  founderCtaBlock,
   founderJourney,
   hero,
-  homeContactCta,
   keyStats,
-  modelCapabilities,
   pageMeta,
   portfolioHighlights,
   regionFocus,
@@ -20,52 +19,38 @@ import {
 const HomePage = () => (
   <>
     <Seo {...pageMeta.home} />
-
     <PageHero {...hero} />
+    <StatStrip stats={keyStats} />
 
     <ContentSection
-      title="What EASTGATE does"
-      intro="We invest in and actively build resilient companies across undercapitalised and developing markets in Africa and Asia."
+      title="How EVH works"
+      intro="A venture builder model grounded in institutional rigor, practical execution, and ethical growth."
     >
       <CardGrid items={valuePillars} />
     </ContentSection>
 
     <ContentSection
-      title="Investment model overview"
-      intro="EASTGATE combines structured investment with practical operating support to improve execution quality and long-term growth outcomes."
-    >
-      <CardGrid items={modelCapabilities} />
-    </ContentSection>
-
-    <ContentSection
-      title="Founder journey timeline"
-      intro="From diligence to scale, we work alongside founders with a clear sequence of value-creation milestones."
+      title="Founder journey"
+      intro="From diligence to scale, EVH stays close to execution with a clear operating cadence."
     >
       <Timeline steps={founderJourney} />
     </ContentSection>
 
     <ContentSection
-      title="Regions focus"
-      intro="Our regional strategy prioritises markets where operational depth and strategic capital can unlock disproportionate long-term value."
+      title="Regional focus"
+      intro="We identify scalable opportunities in underserved markets where operational support creates lasting advantage."
     >
       <CardGrid items={regionFocus} />
     </ContentSection>
 
     <ContentSection
-      title="Portfolio preview"
-      intro="Representative placeholders below show how EASTGATE portfolio companies will be presented."
+      title="Portfolio highlights"
+      intro="Representative placeholders for launch; these can be replaced with live portfolio companies."
     >
       <CardGrid items={portfolioHighlights} renderMeta={(item) => item.region} />
     </ContentSection>
 
-    <ContentSection
-      title="Key statistics"
-      intro="A quick snapshot of our foundation, geographic focus, and venture-building model."
-    >
-      <StatStrip stats={keyStats} />
-    </ContentSection>
-
-    <SectionSplit {...homeContactCta} />
+    <SectionSplit {...founderCtaBlock} />
   </>
 );
 

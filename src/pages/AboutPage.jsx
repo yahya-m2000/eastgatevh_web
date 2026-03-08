@@ -7,11 +7,11 @@ const AboutPage = () => (
   <>
     <Seo {...pageMeta.about} />
     <ContentSection
-      title="About EASTGATE"
-      intro="EASTGATE is the public brand of Eastgate Venture Holdings Ltd, a UK-incorporated venture builder investing in undercapitalised and developing regions across Africa and Asia."
+      title="About EVH"
+      intro="Eastgate Venture Holdings is a UK-incorporated venture builder investing in undercapitalised and developing regions across Africa and Asia."
     >
       <p>
-        EASTGATE combines venture capital discipline with practical operational development to help businesses become durable,
+        EVH combines venture capital discipline with practical operational development to help businesses become durable,
         investment-ready, and regionally competitive.
       </p>
     </ContentSection>
