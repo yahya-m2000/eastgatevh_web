@@ -17,17 +17,17 @@ export const pageMeta = {
   about: {
     title: 'About EVH | Eastgate Venture Holdings',
     description:
-      'Learn about EVH's mission, values, and long-term founder partnership approach to venture building.',
+      "Learn about EVH's mission, values, and long-term founder partnership approach to venture building.",
   },
   investmentModel: {
     title: 'Investment Model | EVH',
     description:
-      'Explore EVH's invest-build-scale model combining capital discipline with practical operating support.',
+      "Explore EVH's invest-build-scale model combining capital discipline with practical operating support.",
   },
   regions: {
     title: 'Regions | EVH',
     description:
-      'Discover EVH's regional focus across developing markets in Africa and Asia.',
+      "Discover EVH's regional focus across developing markets in Africa and Asia.",
   },
   portfolio: {
     title: 'Portfolio | EVH',
