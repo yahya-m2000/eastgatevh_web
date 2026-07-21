@@ -1,12 +1,19 @@
+import { StaggerContainer, StaggerItem } from '@/components/motion/StaggerContainer';
+
 const StatStrip = ({ stats }) => (
-  <section className="stat-strip" aria-label="Key metrics">
+  <StaggerContainer
+    className="container-page -mt-10 grid gap-4 sm:grid-cols-3"
+    aria-label="Key metrics"
+  >
     {stats.map((stat) => (
-      <article key={stat.label} className="stat-card">
-        <p className="stat-value">{stat.value}</p>
-        <p className="stat-label">{stat.label}</p>
-      </article>
+      <StaggerItem key={stat.label}>
+        <article className="rounded-(--radius-card) border border-border bg-surface-raised p-6 shadow-sm">
+          <p className="font-display text-2xl font-extrabold text-primary">{stat.value}</p>
+          <p className="mt-1 text-sm text-muted">{stat.label}</p>
+        </article>
+      </StaggerItem>
     ))}
-  </section>
+  </StaggerContainer>
 );
 
 export default StatStrip;

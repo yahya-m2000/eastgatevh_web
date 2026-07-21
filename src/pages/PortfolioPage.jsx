@@ -1,8 +1,9 @@
 import { useMemo, useState } from 'react';
-import CardGrid from '../components/CardGrid';
-import ContentSection from '../components/ContentSection';
-import Seo from '../components/Seo';
-import { pageMeta, portfolioHighlights } from '../content/siteContent';
+import CardGrid from '@/components/CardGrid';
+import ContentSection from '@/components/ContentSection';
+import Seo from '@/components/Seo';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { pageMeta, portfolioHighlights } from '@/content/siteContent';
 
 const allRegions = ['All', ...new Set(portfolioHighlights.map((item) => item.region))];
 
@@ -24,24 +25,15 @@ const PortfolioPage = () => {
         title="Portfolio"
         intro="Placeholder companies below demonstrate the intended portfolio showcase structure and filter behavior."
       >
-        <div className="filter-row" role="tablist" aria-label="Filter portfolio by region">
-          {allRegions.map((region) => {
-            const isActive = region === selectedRegion;
-
-            return (
-              <button
-                key={region}
-                type="button"
-                className={`filter-pill ${isActive ? 'active' : ''}`}
-                onClick={() => setSelectedRegion(region)}
-                role="tab"
-                aria-selected={isActive}
-              >
+        <Tabs value={selectedRegion} onValueChange={setSelectedRegion} className="mb-8">
+          <TabsList aria-label="Filter portfolio by region">
+            {allRegions.map((region) => (
+              <TabsTrigger key={region} value={region}>
                 {region}
-              </button>
-            );
-          })}
-        </div>
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        </Tabs>
 
         <CardGrid
           items={filteredPortfolio}

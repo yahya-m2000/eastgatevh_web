@@ -1,10 +1,10 @@
-import CardGrid from '../components/CardGrid';
-import ContentSection from '../components/ContentSection';
-import PageHero from '../components/PageHero';
-import SectionSplit from '../components/SectionSplit';
-import Seo from '../components/Seo';
-import StatStrip from '../components/StatStrip';
-import Timeline from '../components/Timeline';
+import CardGrid from '@/components/CardGrid';
+import ContentSection from '@/components/ContentSection';
+import PageHero from '@/components/PageHero';
+import SectionSplit from '@/components/SectionSplit';
+import Seo from '@/components/Seo';
+import StatStrip from '@/components/StatStrip';
+import Timeline from '@/components/Timeline';
 import {
   founderCtaBlock,
   founderJourney,
@@ -14,7 +14,7 @@ import {
   portfolioHighlights,
   regionFocus,
   valuePillars,
-} from '../content/siteContent';
+} from '@/content/siteContent';
 
 const HomePage = () => (
   <>

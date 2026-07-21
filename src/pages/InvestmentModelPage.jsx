@@ -1,8 +1,8 @@
-import CardGrid from '../components/CardGrid';
-import ContentSection from '../components/ContentSection';
-import Seo from '../components/Seo';
-import Timeline from '../components/Timeline';
-import { founderJourney, modelCapabilities, pageMeta } from '../content/siteContent';
+import CardGrid from '@/components/CardGrid';
+import ContentSection from '@/components/ContentSection';
+import Seo from '@/components/Seo';
+import Timeline from '@/components/Timeline';
+import { founderJourney, modelCapabilities, pageMeta } from '@/content/siteContent';
 
 const InvestmentModelPage = () => (
   <>

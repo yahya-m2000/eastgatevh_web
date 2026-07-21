@@ -1,6 +1,7 @@
-import ContentSection from '../components/ContentSection';
-import Seo from '../components/Seo';
-import { pageMeta, teamMembers } from '../content/siteContent';
+import ContentSection from '@/components/ContentSection';
+import Seo from '@/components/Seo';
+import { StaggerContainer, StaggerItem } from '@/components/motion/StaggerContainer';
+import { pageMeta, teamMembers } from '@/content/siteContent';
 
 const TeamPage = () => (
   <>
@@ -9,15 +10,17 @@ const TeamPage = () => (
       title="Team"
       intro="A cross-functional partnership model combining investment rigor with operating execution expertise."
     >
-      <div className="team-grid">
+      <StaggerContainer className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {teamMembers.map((member) => (
-          <article key={member.name} className="content-card">
-            <h3>{member.name}</h3>
-            <p>{member.role}</p>
-            <p className="card-meta">{member.focus}</p>
-          </article>
+          <StaggerItem key={member.name}>
+            <article className="h-full rounded-(--radius-card) border border-border bg-surface-raised p-6">
+              <h3 className="font-display text-lg font-semibold text-ink">{member.name}</h3>
+              <p className="mt-1 text-sm text-muted">{member.role}</p>
+              <p className="mt-4 text-sm font-semibold text-primary">{member.focus}</p>
+            </article>
+          </StaggerItem>
         ))}
-      </div>
+      </StaggerContainer>
     </ContentSection>
   </>
 );

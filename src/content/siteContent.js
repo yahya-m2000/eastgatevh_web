@@ -1,12 +1,12 @@
 export const navLinks = [
   { label: 'About', path: '/about' },
   { label: 'Investment Model', path: '/investment-model' },
+  { label: 'Founder Partnerships', path: '/founder-partnerships' },
   { label: 'Regions', path: '/regions' },
   { label: 'Portfolio', path: '/portfolio' },
   { label: 'Team', path: '/team' },
   { label: 'Insights', path: '/insights' },
 ];
-
 
 export const pageMeta = {
   home: {
@@ -24,15 +24,18 @@ export const pageMeta = {
     description:
       "Explore EVH's invest-build-scale model combining capital discipline with practical operating support.",
   },
+  founderPartnerships: {
+    title: 'Founder Partnerships | EVH',
+    description:
+      'Learn how EVH partners with founders through embedded operating support, from diligence to scale.',
+  },
   regions: {
     title: 'Regions | EVH',
-    description:
-      "Discover EVH's regional focus across developing markets in Africa and Asia.",
+    description: "Discover EVH's regional focus across developing markets in Africa and Asia.",
   },
   portfolio: {
     title: 'Portfolio | EVH',
-    description:
-      'View representative EVH portfolio placeholders across sectors and regions.',
+    description: 'View representative EVH portfolio placeholders across sectors and regions.',
   },
   team: {
     title: 'Team | EVH',
@@ -41,8 +44,7 @@ export const pageMeta = {
   },
   insights: {
     title: 'Insights | EVH',
-    description:
-      'Read EVH insights on venture building, ethical growth, and market development.',
+    description: 'Read EVH insights on venture building, ethical growth, and market development.',
   },
   contact: {
     title: 'Contact Us | EVH',
@@ -110,6 +112,40 @@ export const aboutValues = [
   },
 ];
 
+export const founderSupportAreas = [
+  {
+    title: 'Strategy translation',
+    body: 'We turn high-level strategy into a practical operating plan with clear near-term milestones.',
+  },
+  {
+    title: 'Talent and hiring',
+    body: 'We help founders identify and secure the leadership hires that unlock the next stage of growth.',
+  },
+  {
+    title: 'Governance and reporting',
+    body: 'We establish lightweight board and KPI rhythms that build institutional-grade discipline early.',
+  },
+  {
+    title: 'Commercial execution',
+    body: 'We support pricing, channel, and partnership decisions where execution quality matters most.',
+  },
+];
+
+export const founderPartnershipModel = [
+  {
+    title: 'Aligned capital',
+    body: 'Investment structures are designed to preserve founder incentives while meeting institutional governance standards.',
+  },
+  {
+    title: 'Embedded operating support',
+    body: 'EVH works alongside founder teams rather than at arms length, joining key operating and strategic decisions.',
+  },
+  {
+    title: 'Milestone-based partnership',
+    body: 'Support intensity is matched to company stage, scaling from close diligence to lighter-touch governance over time.',
+  },
+];
+
 export const modelCapabilities = [
   {
     title: 'Capital structuring',
@@ -131,9 +167,19 @@ export const modelCapabilities = [
 
 export const portfolioHighlights = [
   { name: 'Company Alpha', sector: 'Financial Services', region: 'West Africa', stage: 'Growth' },
-  { name: 'Company Beta', sector: 'Agri Supply Chain', region: 'East Africa', stage: 'Early Scale' },
+  {
+    name: 'Company Beta',
+    sector: 'Agri Supply Chain',
+    region: 'East Africa',
+    stage: 'Early Scale',
+  },
   { name: 'Company Gamma', sector: 'Healthcare Delivery', region: 'South Asia', stage: 'Growth' },
-  { name: 'Company Delta', sector: 'Climate Infrastructure', region: 'Southeast Asia', stage: 'Early Scale' },
+  {
+    name: 'Company Delta',
+    sector: 'Climate Infrastructure',
+    region: 'Southeast Asia',
+    stage: 'Early Scale',
+  },
 ];
 
 export const regionFocus = [
@@ -149,8 +195,16 @@ export const regionFocus = [
 
 export const teamMembers = [
   { name: 'A. Director', role: 'Managing Partner', focus: 'Portfolio strategy and governance' },
-  { name: 'B. Operator', role: 'Operating Partner', focus: 'Execution systems and scale operations' },
-  { name: 'C. Investor', role: 'Investment Partner', focus: 'Diligence, structuring, and capital strategy' },
+  {
+    name: 'B. Operator',
+    role: 'Operating Partner',
+    focus: 'Execution systems and scale operations',
+  },
+  {
+    name: 'C. Investor',
+    role: 'Investment Partner',
+    focus: 'Diligence, structuring, and capital strategy',
+  },
 ];
 
 export const insightPosts = [

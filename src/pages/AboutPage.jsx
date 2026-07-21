@@ -1,7 +1,7 @@
-import CardGrid from '../components/CardGrid';
-import ContentSection from '../components/ContentSection';
-import Seo from '../components/Seo';
-import { aboutValues, pageMeta } from '../content/siteContent';
+import CardGrid from '@/components/CardGrid';
+import ContentSection from '@/components/ContentSection';
+import Seo from '@/components/Seo';
+import { aboutValues, pageMeta } from '@/content/siteContent';
 
 const AboutPage = () => (
   <>
@@ -10,9 +10,9 @@ const AboutPage = () => (
       title="About EVH"
       intro="Eastgate Venture Holdings is a UK-incorporated venture builder investing in undercapitalised and developing regions across Africa and Asia."
     >
-      <p>
-        EVH combines venture capital discipline with practical operational development to help businesses become durable,
-        investment-ready, and regionally competitive.
+      <p className="max-w-2xl text-base text-muted">
+        EVH combines venture capital discipline with practical operational development to help
+        businesses become durable, investment-ready, and regionally competitive.
       </p>
     </ContentSection>
 
