@@ -1,114 +1,70 @@
-# EVH — Eastgate Venture Holdings
+﻿# EastGate Venture Holdings
 
-Marketing website for Eastgate Venture Holdings (EVH), a UK venture builder backing founders
-in undercapitalised markets across Africa and Asia.
+React 18 / Vite website for EastGate, a partner-led holdings firm with a global mandate and a current focus on Africa and Asia. The site keeps its existing nine routes and Vercel Analytics integration.
 
-Built with **React 18**, **React Router**, and **Vite**. No backend — all copy lives in one
-content file, and pages are thin compositions of shared, reusable section components.
+## Run locally
 
-## Quick start
+Requires Node.js 20 or newer.
 
-Requires Node.js 20+ (see [`.nvmrc`](.nvmrc)).
-
-```bash
-npm install     # install dependencies
-npm run dev     # start the dev server at http://localhost:5173
+```sh
+npm install
+npm run dev
 ```
 
-Other scripts:
+Vite prints the local preview address, normally http://localhost:5173.
 
-| Command                | What it does                             |
-| ---------------------- | ---------------------------------------- |
-| `npm run build`        | Production build to `dist/`              |
-| `npm run preview`      | Serve the production build locally       |
-| `npm run lint`         | Check code with ESLint                   |
-| `npm run lint:fix`     | Auto-fix lint issues where possible      |
-| `npm run format`       | Format all files with Prettier           |
-| `npm run format:check` | Check formatting without writing changes |
+| Command                | Purpose                      |
+| ---------------------- | ---------------------------- |
+| `npm run build`        | Production build in `dist/`  |
+| `npm run preview`      | Preview the production build |
+| `npm run lint`         | ESLint checks                |
+| `npm run format:check` | Prettier checks              |
+| `npm run format`       | Format the repository        |
 
-## Project structure
+## Design and content
 
-Everything under `src/` follows one rule: **pages compose components, components render
-props, and all copy comes from `content/`.** No page or component hardcodes text — that
-separation is what makes the site easy to re-skin or update without touching logic.
+- **Sora** for titles and headings. The favicon is an outlined **Sora ExtraBold / 800** capital E, so it does not depend on browser font loading.
+- **DM Sans** for body text and navigation.
+- Ink, teal, and white shared theme tokens live in [global.css](src/styles/global.css).
+- Navigation, page metadata, hero text, portfolio data, and shared design copy live in [siteContent.js](src/content/siteContent.js). New shared copy belongs there.
+- Pages compose reusable components. All routes are declared in [App.jsx](src/App.jsx).
 
-```
-eastgatevh_web/
-├── docs/
-│   └── PROPOSITION.md       # Brand, IA, and product spec (business-facing, not dev docs)
-├── public/
-│   └── favicon.svg          # Static assets served as-is, referenced by absolute path (/favicon.svg)
-├── src/
-│   ├── main.jsx              # Entry point — mounts <App /> inside BrowserRouter
-│   ├── App.jsx                # All route definitions live here, nowhere else
-│   ├── components/            # Reusable, presentational building blocks (no page owns its own one-off markup)
-│   │   ├── Layout.jsx           # Header, nav, footer, mobile menu — wraps every page via <Outlet />
-│   │   ├── Seo.jsx               # Sets document.title + meta description per page
-│   │   ├── PageHero.jsx          # Big hero banner (home page)
-│   │   ├── ContentSection.jsx    # Titled section wrapper — the default container for page content
-│   │   ├── SectionSplit.jsx      # Two-column text + bullet list + CTA block
-│   │   ├── CardGrid.jsx          # Responsive grid of title/body cards
-│   │   ├── StatStrip.jsx         # Row of headline stats
-│   │   └── Timeline.jsx          # Numbered step list (e.g. founder journey)
-│   ├── content/
-│   │   └── siteContent.js     # SINGLE SOURCE OF TRUTH for all copy: nav, page meta, heroes, cards, contact details
-│   ├── pages/                  # One file per route; each just wires siteContent data into components
-│   │   ├── HomePage.jsx
-│   │   ├── AboutPage.jsx
-│   │   ├── InvestmentModelPage.jsx
-│   │   ├── FounderPartnershipsPage.jsx
-│   │   ├── RegionsPage.jsx
-│   │   ├── PortfolioPage.jsx     # Only page with real interactive state (region filter)
-│   │   ├── TeamPage.jsx
-│   │   ├── InsightsPage.jsx
-│   │   └── ContactPage.jsx       # Only page with a form (client-side validation, no backend submit)
-│   └── styles/
-│       └── global.css          # One global stylesheet, plain CSS with custom properties for theme colors
-├── index.html                # Vite entry HTML — favicon, meta description, and title live here
-├── vite.config.js
-├── eslint.config.js
-├── .prettierrc.json
-└── jsconfig.json             # Editor intellisense (path/JS awareness), not a TypeScript migration
-```
+The homepage includes a brief first-visit brand introduction, animated headings, image parallax, Build–Operate–Transfer tabs, a sticky founder journey, regional photography, and an A&A case-study preview. The compact footer groups the brand, company links, investment links, and contact details above a slim legal row.
 
-### How to find things
+The homepage introduction uses a small, centred logo revealed in horizontal slices, a brief pause, and a soft fade into the page. Headings and navigation enter as the intro fades. It runs on a fresh homepage load (including a reload), never on internal navigation, and is bypassed for reduced motion. It can be skipped with **Enter site**, Escape, Enter, or Space. Font/image readiness has a timeout fallback so the intro cannot hold the page indefinitely.
 
-- **Want to change site copy (headings, card text, contact details)?** Edit
-  [`src/content/siteContent.js`](src/content/siteContent.js) only. Components and pages should
-  never need to change for a copy update.
-- **Want to add a new page?**
-  1. Add copy + a `pageMeta.<page>` entry to `siteContent.js`.
-  2. Create `src/pages/YourPage.jsx`, composing existing components from `src/components/`.
-  3. Register the route in `src/App.jsx`.
-  4. Add a `navLinks` entry in `siteContent.js` if it belongs in the main nav.
-- **Want to change the look of every card / section at once?** Edit the shared component in
-  `src/components/`, not an individual page — pages don't own their own styling.
-- **Want to change colors, spacing, or the mobile breakpoint?** Everything is in
-  [`src/styles/global.css`](src/styles/global.css); theme colors are CSS custom properties at
-  the top of the file (`--brand`, `--bg`, `--text`, etc.).
+Motion uses Framer Motion and Lenis. Touch scrolling remains native. The site respects `prefers-reduced-motion`, bypasses the introduction for that preference, and includes focus styles, a skip link, and a keyboard-accessible Radix navigation dialog.
 
-## Code quality
+## Key files
 
-- **ESLint** (flat config, `eslint.config.js`) enforces React Hooks rules and catches unused
-  variables/imports. Run `npm run lint` before committing.
-- **Prettier** (`.prettierrc.json`) formats consistently — single quotes, trailing commas,
-  100-character lines. Run `npm run format` to apply.
-- No TypeScript — `jsconfig.json` exists purely to give editors path/JS awareness, not as a
-  migration step.
+| File                                                               | Responsibility                                |
+| ------------------------------------------------------------------ | --------------------------------------------- |
+| `src/components/BrandIntro.jsx`                                    | First-visit brand introduction                |
+| `src/components/Header.jsx`, `MenuOverlay.jsx`                     | Desktop navigation and full menu              |
+| `src/components/home/HomeHero.jsx`, `HomeStory.jsx`                | Homepage composition                          |
+| `src/components/editorial/InteriorHero.jsx`, `InteriorSection.jsx` | Shared interior-page layouts                  |
+| `src/components/PortfolioDirectory.jsx`                            | Portfolio region filters                      |
+| `src/components/ContactForm.jsx`                                   | Enquiry form and email draft                  |
+| `src/lib/contactForm.js`                                           | Validation and mailto encoding                |
+| `src/components/Footer.jsx`                                        | Compact footer and grouped navigation         |
+| `src/components/motion/SplitHeading.jsx`                           | Heading animation with preserved word spacing |
+| `src/components/motion/ParallaxImage.jsx`                          | Scroll-linked photography                     |
+| `public/favicon.svg`                                               | Outlined Sora ExtraBold E on ink              |
+
+Earlier design components and the `figma/` reference project remain available in the checkout.
+
+## Contact form
+
+There is no backend or form delivery service. **Prepare email** validates the enquiry and opens a draft in the visitor's email app. The visitor must send it from that app. A readable draft, copy action, and edit action remain available if no email app opens. No message is represented as sent by the website.
+
+Set the real receiving address in `contactDetails.email` before launch.
+
+## Images
+
+The existing garden photograph and supplied logo assets are retained. Regional photography is served locally from `public/images/`. Sources and license references are recorded in [ASSETS.md](docs/ASSETS.md).
 
 ## Deployment
 
-The site is a static Vite build (`npm run build` → `dist/`), deployed on Vercel. Web Analytics
-is wired in via the official [`@vercel/analytics`](https://www.npmjs.com/package/@vercel/analytics)
-React component (see `src/App.jsx`), which is a safe no-op when the site isn't running on Vercel.
+The existing deployment target is Vercel. Build with `npm run build` and serve `dist/` with SPA fallback to `index.html` for client-side routes. This redesign does not change hosting or publish a deployment.
 
-## Known placeholders
-
-This is a launch-ready shell with placeholder content, clearly called out in
-[`docs/PROPOSITION.md`](docs/PROPOSITION.md):
-
-- Team members (`A. Director`, `B. Operator`, `C. Investor`) and portfolio companies
-  (`Company Alpha/Beta/Gamma/Delta`) are placeholders — swap them in `siteContent.js`.
-- `contactDetails` in `siteContent.js` uses placeholder email/phone values.
-- The contact form validates and displays a success message but does not submit anywhere —
-  wire `ContactPage.jsx`'s `handleSubmit` up to a real backend or form service before launch.
+Business copy reflects the owner’s brief and subsequent corrections. EastGate is the brand shorthand. A&A Trade Solutions is the first BOT case study, with links to its website. Noah’s profile covers establishing operations in Africa and training the founders; Yahya is credited with building A&A Shop, available on Google Play. HOYBNB is briefly identified as an earlier project that did not gain traction. Ridwan’s experience remains an explicit placeholder. Source notes are in [CONTENT_NOTES.md](docs/CONTENT_NOTES.md).

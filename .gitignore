@@ -26,3 +26,6 @@ Thumbs.db
 # Vite cache
 .vite/
 *.local
+
+# Local verification scripts (not part of the app)
+.tmp-scripts/

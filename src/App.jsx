@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
+import BrandIntro from './components/BrandIntro';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import FounderPartnershipsPage from './pages/FounderPartnershipsPage';
@@ -12,7 +13,7 @@ import RegionsPage from './pages/RegionsPage';
 import TeamPage from './pages/TeamPage';
 
 const App = () => (
-  <>
+  <BrandIntro>
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<HomePage />} />
@@ -28,7 +29,7 @@ const App = () => (
       </Route>
     </Routes>
     <Analytics />
-  </>
+  </BrandIntro>
 );
 
 export default App;

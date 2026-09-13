@@ -2,7 +2,7 @@
   "name": "eastgate-vh",
   "private": true,
   "version": "0.1.0",
-  "description": "Marketing website for Eastgate Venture Holdings (EVH), built with React and Vite.",
+  "description": "Marketing website for Eastgate Venture Holdings, built with React and Vite.",
   "type": "module",
   "engines": {
     "node": ">=20"

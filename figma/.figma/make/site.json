@@ -1,0 +1,10 @@
+{
+  "description": "Showcases a UK venture builder's credible investment model for founders in Africa/Asia and co-investors, guiding both to contact for partnership.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

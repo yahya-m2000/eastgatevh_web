@@ -1,53 +1,31 @@
-# EVH Website Proposition (v4)
+﻿# EastGate website proposition
 
-## Brand Direction
+## Business and positioning
 
-- **Name treatment:** Eastgate Venture Holdings (EVH) with EVH as primary brand mark.
-- **Tone:** Corporate and investment-grade with a human, ethical, founder-supportive voice.
-- **Visual style:** Professional sans-serif typography, restrained palette, high readability, modular card-based layout.
+Eastgate Venture Holdings is a discreet, partner-led holdings firm. It establishes and operates ventures through Build–Operate–Transfer, retains majority ownership, and aligns its long-term economic interests with local transformation. Independent direction and rigorous oversight are central to the closed-loop model.
 
-## Information Architecture (Launch)
+The company previously operated as The Eastern Trade Group. A&A Trade Solutions, an East African logistics and technology venture acquired under that earlier identity, is the first full BOT project.
 
-- Home
-- About
-- Investment Model
-- Founder Partnerships
-- Regions
-- Portfolio
-- Team
-- Insights
-- Contact
+The mandate is global. Africa and Asia are the current focus; Europe, North America, South America and Oceania are possible future areas of work, not claimed operating locations.
 
-## UX Priorities
+## Content architecture
 
-1. Attract founders in Africa/Asia undercapitalised markets
-2. Showcase portfolio credibility and EVH operating model
-3. Build confidence with co-investors and strategic partners
+- Home: proposition, BOT phases, principles, founder journey, current regions and the A&A preview.
+- About: purpose, company history, independent direction and principles.
+- Investment model: Build–Operate–Transfer, majority ownership, handover and selection.
+- Founder partnerships: practical support, expectations and the working relationship.
+- Regions: current African and Asian activity distinguished from the global mandate.
+- Portfolio: A&A Trade Solutions as the first BOT project, linked to its website; A&A Shop as the app built by Yahya and available on Google Play. HOYBNB is a brief reference to earlier work that did not gain traction.
+- Team: Ridwan Mohamed, Noah Mohamed and Yahya Mohamed, with expandable selected experience. Noah’s profile includes establishing and running A&A Trade Solutions operations within Africa and training the founders towards self-sufficiency.
+- Insights: the firm's operating principles, with no invented publication dates or research archive.
+- Contact: founder and operating enquiries, using the existing email-draft form.
 
-## CTA Strategy
+All copy, including interior-page sections, is maintained in `src/content/siteContent.js`. Pages compose `ContentPage`, `InteriorSection` and the other shared components.
 
-- Primary CTA across navigation and hero: **Contact Us**
-- Secondary conversion point: enquiry form on Contact page
+## Design requirements
 
-## Build Progress (Current)
+Retain the Sora heading font and Sora ExtraBold outlined favicon; use DM Sans body text. Keep the compact, organised footer, the small sliced-logo introduction, preserved heading spaces, parallax, responsive layout and reduced-motion support.
 
-- Home includes key metrics, founder journey timeline, and founder-specific CTA block.
-- Portfolio includes region filtering for quicker discovery.
-- Investment Model details practical EVH operating capabilities.
-- Founder Partnerships details EVH's operating-partner support model and partnership structure.
-- Team and Insights include structured placeholder card layouts.
-- Contact includes lightweight client-side validation and form feedback.
-- All pages now set page-level metadata (title + description) through a reusable SEO component.
-- Navigation now supports a mobile menu flow.
+## Outstanding factual detail
 
-## Content Strategy
-
-- A central `src/content/` layer powers navigation, page blocks, metadata, cards, and placeholders.
-- Placeholders are structured to be swapped with production content without touching component logic.
-
-## Technical Implementation Notes
-
-- React + Vite with modular, reusable components.
-- Shared section primitives (`ContentSection`, `CardGrid`, `Timeline`, `StatStrip`, `SectionSplit`) keep implementation DRY.
-- Reusable SEO component updates page title and meta description.
-- Vercel Web Analytics via the `@vercel/analytics` React component (no-ops automatically off Vercel).
+See [CONTENT_NOTES.md](CONTENT_NOTES.md) for source provenance, the working Transfer interpretation, the founder biography placeholder and product-stage limits.

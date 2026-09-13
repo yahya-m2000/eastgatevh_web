@@ -1,8 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="E│G monogram">
-  <rect width="64" height="64" fill="#ffffff"/>
-  <g fill="#0d2c54" font-family="Inter, Avenir, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle" dominant-baseline="middle">
-    <text x="19" y="35">E</text>
-    <text x="32" y="35">│</text>
-    <text x="45" y="35">G</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EastGate">
+  <title>EastGate — Sora ExtraBold</title>
+  <rect width="64" height="64" rx="14" fill="#10282f"/>
+  <path fill="#13c4ce" d="M19.819178082191783 51.0V13.0H29.189041095890413V51.0ZM28.147945205479452 51.0V43.087671232876716H44.180821917808224V51.0ZM28.147945205479452 35.64383561643835V27.731506849315068H43.087671232876716V35.64383561643835ZM28.147945205479452 20.912328767123288V13.0H43.868493150684934V20.912328767123288Z"/>
 </svg>
