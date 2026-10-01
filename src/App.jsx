@@ -10,7 +10,6 @@ import InsightsPage from './pages/InsightsPage';
 import InvestmentModelPage from './pages/InvestmentModelPage';
 import PortfolioPage from './pages/PortfolioPage';
 import RegionsPage from './pages/RegionsPage';
-import TeamPage from './pages/TeamPage';
 
 const App = () => (
   <BrandIntro>
@@ -22,7 +21,8 @@ const App = () => (
         <Route path="/founder-partnerships" element={<FounderPartnershipsPage />} />
         <Route path="/regions" element={<RegionsPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
-        <Route path="/team" element={<TeamPage />} />
+        {/* Team page hidden pending owner review: /team falls through to the redirect below.
+            src/pages/TeamPage.jsx and its content remain in place to restore it. */}
         <Route path="/insights" element={<InsightsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />

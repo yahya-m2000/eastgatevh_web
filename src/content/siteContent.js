@@ -9,10 +9,6 @@ export const navGroups = [
         path: '/about',
       },
       {
-        label: 'Team',
-        path: '/team',
-      },
-      {
         label: 'Founder Partnerships',
         path: '/founder-partnerships',
       },
@@ -50,10 +46,6 @@ export const navLinks = [
     path: '/about',
   },
   {
-    label: 'Team',
-    path: '/team',
-  },
-  {
     label: 'Founder Partnerships',
     path: '/founder-partnerships',
   },
@@ -79,17 +71,17 @@ export const pageMeta = {
   home: {
     title: 'EastGate | Venture Holdings',
     description:
-      'Eastgate Venture Holdings is a partner-led holdings firm. We build, operate and retain majority ownership in ventures, with a global mandate and a current focus on Africa and Asia.',
+      'EastGate Venture Holdings is a partner-led holdings firm. We build and operate ventures alongside founders and remain invested for the long term, with a global mandate and a current focus on Africa and Asia.',
   },
   about: {
     title: 'About | EastGate',
     description:
-      'From The Eastern Trade Group to Eastgate Venture Holdings: a discreet, independent firm building ventures for lasting local transformation.',
+      'From The Eastern Trade Group to EastGate Venture Holdings: a partner-led venture holding company building lasting capability into the ventures it helps develop.',
   },
   investmentModel: {
     title: 'Build–Operate–Transfer | EastGate',
     description:
-      'Our Build–Operate–Transfer model combines venture creation, operational leadership and a planned founder handover, with EastGate retaining majority ownership.',
+      'Our Build–Operate–Transfer model: build the venture, strengthen its operations and prepare its leadership to take greater responsibility, with EastGate remaining a long-term shareholder.',
   },
   founderPartnerships: {
     title: 'Founder Partnerships | EastGate',
@@ -99,12 +91,12 @@ export const pageMeta = {
   regions: {
     title: 'Our World | EastGate',
     description:
-      'A global mandate, with current activity across Africa and Asia. EastGate goes where its capital, expertise and operating involvement can make a difference.',
+      'A growing network across East Africa and China, with a global mandate. EastGate looks for markets where changing economic conditions, emerging trade links and local demand create durable opportunity.',
   },
   portfolio: {
     title: 'A&A Trade Solutions & Venture Building | EastGate',
     description:
-      'A&A Trade Solutions is EastGate’s first Build–Operate–Transfer project. Explore its operations in Africa and A&A Shop, built by Yahya Mohamed and available on Google Play.',
+      'A&A Trade Solutions is EastGate’s first Build–Operate–Transfer project. Explore its operations in Africa and A&A Store, built by Yahya Mohamed and available on Google Play.',
   },
   team: {
     title: 'Team | EastGate',
@@ -119,22 +111,22 @@ export const pageMeta = {
   contact: {
     title: 'Contact | EastGate',
     description:
-      'Introduce your venture, operating expertise or local opportunity to Eastgate Venture Holdings.',
+      'Introduce your venture, operating expertise or local opportunity to EastGate Venture Holdings.',
   },
 };
 
 export const pageHeroContent = {
   about: {
     eyebrow: 'About EastGate',
-    title: 'Quiet conviction. Deliberate growth.',
+    title: 'Our vision is to create lasting capability.',
     subtitle:
-      'A discreet, partner-led holdings firm. We establish ventures, build their capabilities and remain invested in their future.',
+      'EastGate is a partner-led venture holding company focused on longevity and building self-sufficiency into the ventures we help develop. We work directly alongside founders to strengthen operational capability and remain invested as those ventures mature.',
   },
   investmentModel: {
     eyebrow: 'Our investment model',
     title: 'Build. Operate. Transfer.',
     subtitle:
-      'One continuous commitment: create the venture, strengthen its operations and prepare founders to lead, while EastGate retains majority ownership.',
+      'One continuous commitment: build the venture, strengthen its operations and prepare its leadership to take greater responsibility as the business matures.',
   },
   founderPartnerships: {
     eyebrow: 'Founder partnerships',
@@ -146,7 +138,7 @@ export const pageHeroContent = {
     eyebrow: 'Our world',
     title: 'Where we can make a difference.',
     subtitle:
-      'Africa and Asia today. A global mandate shaped by the needs of each venture and the value we can contribute.',
+      'A growing network across East Africa and China, with a mandate built to extend further.',
   },
   portfolio: {
     eyebrow: 'Our work',
@@ -179,8 +171,8 @@ export const keyStats = [
     label: 'Build · Operate · Transfer',
   },
   {
-    value: 'Majority',
-    label: 'Ownership retained for the long term',
+    value: 'Long-term',
+    label: 'Invested beyond the handover',
   },
   {
     value: 'Global',
@@ -192,34 +184,34 @@ export const whatWeDoTabs = [
   {
     id: 'build',
     label: 'Build',
-    heading: 'Turn conviction into a working business.',
-    body: 'We select ventures we believe can grow, then build alongside their founders or take the lead in creating them. Capital, our network and practical expertise come together around a clear plan.',
+    heading: 'Turn vision into a working business.',
+    body: 'We carefully select ventures where we see meaningful potential, then work alongside founders to develop their ideas into a viable, working business. Our network, practical expertise and operating experience come together around a clear plan shaped to the needs of each venture.',
     items: [
-      'Venture planning and product development',
-      'Access to people, suppliers and specialist expertise',
-      'The systems and commercial foundations to begin operating',
+      'Detailed planning and product development',
+      'Access to capital, specialist expertise and more',
+      'The systems and commercial foundations needed to begin operating',
     ],
   },
   {
     id: 'operate',
     label: 'Operate',
-    heading: 'Take responsibility for the work.',
-    body: 'We stay involved in the everyday realities of the venture: developing its people, allocating resources and overseeing delivery. Founders gain the support and experience to lead a more capable organisation.',
+    heading: 'Work alongside. Build capability.',
+    body: 'Our role adapts to what the venture needs. We remain close to its everyday realities — developing people, strengthening systems and supporting delivery — while tracking progress against clear operational milestones and development targets.',
     items: [
-      'Operational leadership and resource allocation',
-      'Founder training, staffing and team development',
-      'Governance, risk oversight and performance review',
+      'Operational support and resource allocation',
+      'Founder, staffing and team development',
+      'Milestones, performance targets and progress reviews',
     ],
   },
   {
     id: 'transfer',
     label: 'Transfer',
-    heading: 'Founder-led operations. Lasting alignment.',
-    body: 'We prepare a structured handover to founders, combining management responsibility with an ownership stake. EastGate retains majority ownership, keeping its long-term economic interests aligned with the venture’s progress.',
+    heading: 'Operational independence. Lasting alignment.',
+    body: 'When the venture is ready, we prepare a structured handover of day-to-day operations to its leadership. EastGate remains a long-term shareholder, providing continued strategic and advisory support where it adds value while allowing the business to operate with increasing independence.',
     items: [
       'A planned handover of day-to-day management',
-      'Founder ownership participation within a majority-held venture',
-      'Continued strategic oversight and long-term investment',
+      'Independent operational leadership',
+      'Long-term investment, strategic and advisory support',
     ],
   },
 ];
@@ -227,15 +219,30 @@ export const whatWeDoTabs = [
 export const valuePillars = [
   {
     title: 'Independent by principle',
-    body: 'Our closed-loop model keeps capital, operational decisions and oversight within an aligned ownership structure. We retain majority ownership and protect the venture’s direction from outside interference.',
+    body: 'Our closed-loop investment model keeps capital, operational decisions and oversight closely aligned, allowing ventures to develop with clarity and without compromising long-term direction for short-term pressures.',
   },
   {
     title: 'Accountable in practice',
-    body: 'We take responsibility for the businesses we help create. Rigorous oversight, disciplined resource allocation and direct involvement connect our decisions to the work on the ground.',
+    body: 'We hold ourselves accountable for how we build and operate. That means acting with integrity, adhering to recognised international standards, maintaining responsible operating practices, and working constructively with regional stakeholders throughout the life of a venture.',
   },
   {
-    title: 'Local value, lasting ownership',
-    body: 'Our aim is to strengthen the capabilities of the regions where we work. We build businesses that serve local needs and retain a stake in their long-term development.',
+    title: 'Development by design',
+    body: 'The ventures we build aim to contribute to the long-term productive capacity of the regions in which they operate — supporting sustained employment, skills development, stronger local enterprise and increased domestic economic activity.',
+  },
+];
+
+export const selectionCriteria = [
+  {
+    title: 'A clear market need',
+    body: 'A venture should address a genuine commercial need, with credible demand and the potential to contribute meaningfully to the market and economy in which it operates.',
+  },
+  {
+    title: 'People we can build with',
+    body: 'We look for founders and partners with ambition, local understanding and a willingness to work collaboratively through the challenges of building and developing a business.',
+  },
+  {
+    title: 'A meaningful role for EastGate',
+    body: 'We invest where our operating experience, network, resources or technical capability can make a material difference to the venture’s development, the regional market and long-term prospects.',
   },
 ];
 
@@ -258,7 +265,7 @@ export const founderJourney = [
   },
   {
     title: 'Remain aligned',
-    body: 'Founders lead day-to-day operations. EastGate retains a majority shareholding and continued strategic oversight.',
+    body: 'Founders lead day-to-day operations. EastGate remains a long-term shareholder, providing strategic and advisory support.',
   },
 ];
 
@@ -282,7 +289,7 @@ export const teamMembers = [
   {
     name: 'Ridwan Mohamed',
     role: 'Founder',
-    bio: 'Founder of Eastgate Venture Holdings, the partner-led firm behind our Build–Operate–Transfer approach.',
+    bio: 'Founder of EastGate Venture Holdings, the partner-led firm behind our Build–Operate–Transfer approach.',
     note: 'Experience profile to follow.',
   },
   {
@@ -319,10 +326,10 @@ export const teamMembers = [
   {
     name: 'Yahya Mohamed',
     role: 'Partner · Contracted technical delivery',
-    bio: 'Yahya combines venture planning with hands-on software development. Alongside his EastGate partnership, he undertakes contracted technical delivery for A&A Trade Solutions. He built A&A Shop, available on Google Play, connecting the business’s sourcing operation with a mobile product catalogue and ordering experience.',
+    bio: 'Yahya combines venture planning with hands-on software development. Alongside his EastGate partnership, he undertakes contracted technical delivery for A&A Trade Solutions. He built A&A Store, available on Google Play, connecting the business’s sourcing operation with a mobile product catalogue and ordering experience.',
     experience: [
       {
-        organisation: 'Eastgate Venture Holdings',
+        organisation: 'EastGate Venture Holdings',
         role: 'Partner',
         detail:
           'Coordinates digital product development, operational planning and internal software delivery, translating founders’ goals into practical delivery plans.',
@@ -331,7 +338,7 @@ export const teamMembers = [
         organisation: 'A&A Trade Solutions',
         role: 'Digital Lead · Contract',
         detail:
-          'Built A&A Shop, available on Google Play, alongside the company website and digital content. Supports customer enquiries, supplier coordination and the digital tools behind the cross-border trade operation.',
+          'Built A&A Store, available on Google Play, alongside the company website and digital content. Supports customer enquiries, supplier coordination and the digital tools behind the cross-border trade operation.',
       },
       {
         organisation: 'Imperial College London',
@@ -400,7 +407,7 @@ export const designContent = {
     locations: 'A global mandate',
     lines: ['Beyond capital.', 'Into possibility.'],
     intro:
-      'Eastgate Venture Holdings builds and operates ventures with conviction. We work alongside founders, strengthen local capability and retain majority ownership for the long term.',
+      'EastGate Venture Holdings builds and operates ventures with conviction. We work alongside founders, strengthen local capability and remain invested for the long term.',
     cta: {
       label: 'Meet EastGate',
       path: '/about',
@@ -415,7 +422,7 @@ export const designContent = {
   approach: {
     eyebrow: '01 / What we do',
     label: 'Build–Operate–Transfer phases',
-    heading: 'Build with conviction.\nStay for the work.',
+    heading: 'From vision to venture.\nBuilt together.',
     cta: {
       label: 'Explore the BOT model',
       path: '/investment-model',
@@ -427,15 +434,28 @@ export const designContent = {
     intro:
       'Independent decisions, direct involvement and a commitment to the places where we build.',
   },
-  journey: {
-    eyebrow: '03 / Built together',
-    heading: 'Built together.\nPrepared to lead.',
-    intro:
-      'From the first assessment to founder-led operations, the work follows one continuous plan.',
+  criteria: {
+    eyebrow: '03 / Our criteria',
+    heading: 'What we look for\nbefore we commit.',
     cta: {
       label: 'For founders',
       path: '/founder-partnerships',
     },
+    // Summaries of selectionCriteria, which Our approach shows in full.
+    items: [
+      {
+        title: 'A clear market need',
+        body: 'Genuine commercial demand, with the potential to strengthen the wider economy.',
+      },
+      {
+        title: 'People we can build with',
+        body: 'Ambitious founders and partners with local understanding, ready to build collaboratively.',
+      },
+      {
+        title: 'A meaningful role for EastGate',
+        body: 'Where our experience, network and capability can make a material difference.',
+      },
+    ],
   },
   regions: {
     eyebrow: '04 / Our world',
@@ -452,14 +472,14 @@ export const designContent = {
         regions: 'Current focus / East African roots',
         image: '/images/africa.jpg',
         alt: 'The Lekki–Ikoyi bridge and Lagos urban waterfront',
-        path: '/regions#africa',
+        path: '/regions#current-focus',
       },
       {
         title: 'Asia',
         regions: 'Current focus / Trade connections',
         image: '/images/asia.jpg',
         alt: 'The Singapore skyline across Marina Bay at dusk',
-        path: '/regions#asia',
+        path: '/regions#current-focus',
       },
     ],
   },
@@ -495,10 +515,6 @@ export const designContent = {
             path: '/about',
           },
           {
-            label: 'Our team',
-            path: '/team',
-          },
-          {
             label: 'Our thinking',
             path: '/insights',
           },
@@ -528,7 +544,7 @@ export const designContent = {
     ],
     statement: 'Operate quietly. Invest decisively.\nBuild deliberately.',
     connect: 'Connect',
-    legal: 'Eastgate Venture Holdings.',
+    legal: 'EastGate Venture Holdings.',
     rights: 'All rights reserved.',
   },
   loading: {
@@ -569,39 +585,47 @@ export const designContent = {
   team: {
     experienceLabel: 'Selected experience',
   },
+  story: {
+    previous: 'Previous stage',
+    next: 'Next stage',
+  },
 };
 
 export const pageSections = {
   about: [
     {
       label: 'Who we are',
-      heading: 'A holding company with an operating purpose.',
+      heading: 'Capital with intent.',
       intro:
-        'Eastgate Venture Holdings is a discreet, partner-led firm focused on the strategic development of emerging regions through venture building.',
+        'EastGate Venture Holdings combines the discipline of long-term investment with the responsibility of active ownership. We focus on regions where infrastructure development and changing market conditions can create the foundations for durable enterprise and emerging commercial hubs.',
       content: {
         type: 'paragraph',
-        body: 'We establish, operate and retain ownership in businesses we believe can make a lasting contribution. Our closed-loop model brings investment, execution and oversight together, aligning the firm’s long-term economic interests with the development of each venture and the community it serves.',
+        body: 'Our aim is not only to build strong ventures, but to leave behind greater productive capacity, deeper local capability and a lasting contribution to the economies in which we operate.',
       },
     },
     {
       label: 'Our story',
       heading: 'A clearer expression of who we are.',
-      intro:
-        'EastGate grew out of The Eastern Trade Group. The change of name reflects a more authentic identity and a clearer commitment to building and operating ventures.',
       content: {
-        type: 'steps',
+        type: 'story',
         items: [
           {
-            title: 'The Eastern Trade Group',
-            body: 'Our earlier identity was an investment firm. During this period, the company acquired ownership in A&A Trade Solutions, an East African startup involved in logistics and technology solutions.',
+            title: 'How we started',
+            body: 'EastGate Venture Holdings, formerly The Eastern Trade Group, began with a focus on investment and international trade. Early in its development, the Group established an operating network across multiple markets and acquired its first venture, A&A Trade Solutions.',
+            image: {
+              src: '/images/eastern-trade-group-logo.png',
+              alt: 'The Eastern Trade Group logo',
+            },
           },
           {
-            title: 'Eastgate Venture Holdings',
-            body: 'The rebrand brings our purpose into focus: a partner-led holdings firm that takes direct responsibility for the ventures it selects.',
+            title: 'Our first acquisition',
+            body: 'Working directly with A&A gave the principles behind EastGate’s Build–Operate–Transfer model the opportunity to take shape in practice. What began as an investment developed into a deeper operating partnership, combining commercial development, internal systems, technology and practical support for the business and its founders.',
+            image: { src: '/images/aa-trade-solutions-logo.png', alt: 'A&A Trade Solutions logo' },
           },
           {
-            title: 'The first BOT project',
-            body: 'A&A became the first full application of our Build–Operate–Transfer approach, combining commercial operations with internal product development and practical support for its founders.',
+            title: 'Who we are now',
+            body: 'As that approach became central to the way the Group worked, EastGate Venture Holdings emerged as a clearer reflection of the company it had become: a long-term venture holding firm built around active ownership, operational involvement and lasting alignment.',
+            image: { src: '/logo/1x/full_brand_logo.png', alt: 'EastGate logo' },
           },
         ],
       },
@@ -609,16 +633,35 @@ export const pageSections = {
     {
       label: 'Our principles',
       heading: 'The way we hold ourselves to account.',
-      content: { type: 'cards', items: valuePillars },
+      content: {
+        type: 'cards',
+        items: [
+          {
+            title: 'Independent by principle',
+            body: 'We remain deliberately independent in how we invest and operate. Keeping capital, decision-making and oversight closely aligned helps protect our ethos and allows us to pursue long-term objectives without being driven by external interests focused solely on financial return.',
+          },
+          {
+            title: 'Aligned in outcome',
+            body: 'We work alongside the founders and teams we support, sharing in both the risks and the outcomes of the venture. Our success is tied to theirs, giving us every reason to remain engaged, responsible and committed to making the business work.',
+          },
+          {
+            title: 'Built for continuity',
+            body: 'We favour sustainable growth over short-term extraction. Our aim is to build ventures capable of continuing to develop beyond our direct operational involvement: businesses with the foundations, capability and resilience to sustain their own growth over time.',
+          },
+        ],
+      },
     },
     {
-      label: 'Independent direction',
-      heading: 'Sovereign in how we build.',
+      label: 'Responsible growth',
+      heading: 'Commitment to international standards.',
       intro:
-        'For EastGate, sovereign venture building means independent direction, local capability and responsibility for the outcome.',
+        'As EastGate grows, we intend to hold our ventures to recognised international standards and seek independent assessment where relevant to the businesses and markets in which we operate.',
       content: {
         type: 'paragraph',
-        body: 'We protect a venture’s purpose through majority ownership and rigorous operational oversight. Decisions stay close to the people doing the work. As founders become ready to take on management, our continuing stake keeps us invested in the business they lead.',
+        body: [
+          'Our aim is to build the governance, employment practices, operational controls and responsible investment principles needed to meet appropriate external frameworks over time.',
+          'For us, responsible growth should ultimately be capable of being measured, tested and independently verified.',
+        ],
       },
     },
   ],
@@ -627,55 +670,29 @@ export const pageSections = {
       label: 'B·O·T',
       heading: 'Three phases. One aligned structure.',
       intro:
-        'We commit capital and operating expertise to ventures we select for their potential. Build–Operate–Transfer gives that commitment a practical shape.',
+        'We commit investment, operating expertise and long-term support to ventures we select for their potential. Build–Operate–Transfer gives that commitment a practical structure.',
       content: {
         type: 'steps',
-        items: whatWeDoTabs.map((phase) => ({ title: phase.label, body: phase.body })),
-      },
-    },
-    {
-      label: 'Ownership & continuity',
-      heading: 'A handover built around lasting ownership.',
-      intro:
-        'Transfer is a planned change in who leads the everyday operation. Founder ownership participation sits within a structure in which EastGate remains the majority shareholder.',
-      content: {
-        type: 'bullets',
         items: [
-          'Agree the venture’s direction, operating responsibilities and ownership arrangements at the outset.',
-          'Build the founders’ and team’s capability through training, practical experience and access to resources.',
-          'Prepare the management handover with clear responsibilities, documented systems and agreed ownership participation.',
-          'Retain EastGate’s majority shareholding and strategic oversight, with returns tied to the venture’s long-term performance.',
+          {
+            title: 'Build',
+            body: 'We select ventures we believe have the potential to grow, then work alongside their founders to develop them further. Our network, practical expertise and operating experience come together around a clear plan tailored to the needs of each venture.',
+          },
+          {
+            title: 'Operate',
+            body: 'Our involvement develops according to what the venture requires. We work alongside founders and teams to strengthen operations, develop people, allocate resources and measure progress against clear milestones and performance targets.',
+          },
+          {
+            title: 'Transfer',
+            body: 'As the venture matures, we prepare a structured handover of day-to-day operational responsibility to its leadership. EastGate remains a long-term partner, providing strategic and advisory support while the business continues to develop with increasing independence.',
+          },
         ],
       },
     },
     {
-      label: 'Selection',
+      label: 'Our criteria',
       heading: 'Conviction has to meet practical need.',
-      content: {
-        type: 'cards',
-        items: [
-          {
-            title: 'A meaningful problem',
-            body: 'A business with a clear role in the market it serves and the potential to strengthen local economic activity.',
-          },
-          {
-            title: 'People we can build with',
-            body: 'Founders who share the ambition, are open to operational involvement and understand the majority-ownership model.',
-          },
-          {
-            title: 'A useful role for EastGate',
-            body: 'A venture where our capital, network, technical capability or operating expertise can make a concrete contribution.',
-          },
-        ],
-      },
-    },
-    {
-      label: 'The closed-loop model',
-      heading: 'Keep vision and responsibility together.',
-      content: {
-        type: 'paragraph',
-        body: 'Our model is structured around majority ownership, direct operational involvement and partner-led oversight. We do not pursue minority investment positions. Keeping control and accountability aligned allows us to protect the venture’s direction while developing the people who will lead it.',
-      },
+      content: { type: 'cards', items: selectionCriteria },
     },
   ],
   founderPartnerships: [
@@ -725,7 +742,7 @@ export const pageSections = {
       heading: 'The right expertise, close to the work.',
       content: {
         type: 'paragraph',
-        body: 'At A&A Trade Solutions, Noah Mohamed helped establish and run operations from within Africa, training the founders towards self-sufficient management. Yahya Mohamed took on contracted technical delivery and built A&A Shop, available on Google Play. Together, their work connects practical operating support with the digital tools the business needs.',
+        body: 'At A&A Trade Solutions, Noah Mohamed helped establish and run operations from within Africa, training the founders towards self-sufficient management. Yahya Mohamed took on contracted technical delivery and built A&A Store, available on Google Play. Together, their work connects practical operating support with the digital tools the business needs.',
       },
     },
   ],
@@ -734,56 +751,45 @@ export const pageSections = {
       label: 'Our mandate',
       heading: 'Opportunity sets the geography.',
       intro:
-        'EastGate operates wherever its involvement is needed. Our current work is centred on Africa and Asia; our mandate is global.',
+        'EastGate’s current network is centred on Somaliland, the wider East African region and China. These markets provide the foundation of our operating experience today, while our long-term mandate remains global.',
       content: {
         type: 'paragraph',
-        body: 'We are interested in ventures that can strengthen the regions they serve. Geography matters through the local need, the people involved and our ability to help the business operate. Expansion follows that assessment, rather than a fixed list of countries.',
+        body: 'We look for regions where changing economic conditions, emerging trade links and local demand create opportunities for durable enterprise. Expansion follows the strength of the opportunity, the people involved and where EastGate can make a meaningful contribution.',
       },
     },
     {
-      id: 'africa',
-      label: 'Current focus / Africa',
-      heading: 'East African roots. Local purpose.',
+      id: 'current-focus',
+      label: 'Current focus',
+      heading: 'Building for the region’s growing e-commerce demand.',
       intro:
-        'Our first BOT project, A&A Trade Solutions, began as an East African startup in logistics and technology solutions.',
+        'Our work with A&A Trade Solutions has focused on developing the systems, infrastructure and operational capability needed to support a growing e-commerce market. This has included strengthening internal processes, introducing digital tools, developing supplier and logistics networks and preparing the team to manage greater order volume and operational complexity.',
       content: {
         type: 'cards',
         items: [
           {
-            title: 'Commercial connections',
-            body: 'A&A’s trade operations help connect African businesses with product sourcing, procurement and logistics services in China.',
+            title: 'Operational infrastructure',
+            body: 'We have helped establish the processes behind A&A’s day-to-day operation, including order handling, customer enquiries, quality control, refunds and returns, and more. Digital solutions, including A&A Store, the first e-commerce platform in Somaliland, have been introduced alongside practical training to strengthen operational capability.',
           },
           {
-            title: 'Useful technology',
-            body: 'Digital storefronts and the A&A Shop catalogue bring product discovery and order enquiries into the same commercial operation.',
+            title: 'Fulfilment and logistics',
+            body: 'A growing network of suppliers, warehouse partners and logistics providers supports sourcing and fulfilment. Our current focus is on improving air and sea freight options, delivery reliability, reduced rates and the wider logistics infrastructure required to support a more efficient e-commerce service.',
           },
           {
-            title: 'Capability that stays',
-            body: 'Our work is intended to leave founders and local teams better equipped to manage a durable business.',
+            title: 'The next stage',
+            body: 'We are continuing to optimise the platform and operating model around faster local distribution, stronger fulfilment systems and greater order capacity. Over time, the aim is to build a scalable regional e-commerce operation capable of delivering the convenience, reliability and service standards associated with leading global platforms.',
           },
         ],
       },
     },
     {
-      id: 'asia',
-      label: 'Current focus / Asia',
-      heading: 'Connecting supply with local demand.',
-      intro:
-        'Asia is part of our current activity through the supplier relationships and trade routes that support A&A’s operations.',
-      content: {
-        type: 'paragraph',
-        body: 'A&A Trade Solutions focuses on China–Africa trade, including sourcing, purchasing coordination, shipping and delivery. EastGate’s contribution connects the commercial work with digital tools, clearer customer enquiries and practical supplier coordination.',
-      },
-    },
-    {
       id: 'global',
       label: 'The wider world',
-      heading: 'A global outlook. A specific reason to act.',
+      heading: 'Where opportunity takes shape.',
       intro:
-        'Europe, North America, South America and Oceania are all within our mandate. These are potential areas of work as the right opportunities emerge.',
+        'We pay attention to markets in transition: where infrastructure is improving, trade routes are evolving, digital adoption is accelerating or a growing workforce is creating new commercial demand.',
       content: {
         type: 'paragraph',
-        body: 'Wherever we consider a venture, we ask the same questions: does it meet a meaningful need, can it grow, and can EastGate make a useful operating contribution? Those answers determine where we go next.',
+        body: 'These shifts can create the conditions for new enterprises, new services and new centres of economic activity. When those conditions align with capable local partners and a clear commercial need, they can become the starting point for EastGate’s next venture.',
       },
     },
   ],
@@ -799,7 +805,7 @@ export const pageSections = {
         items: [
           {
             title: 'Build',
-            body: 'Establish the commercial and digital foundations. Yahya Mohamed built A&A Shop, available on Google Play, bringing software development directly into EastGate’s operating contribution.',
+            body: 'Establish the commercial and digital foundations. Yahya Mohamed built A&A Store, available on Google Play, bringing software development directly into EastGate’s operating contribution.',
           },
           {
             title: 'Operate',
@@ -838,11 +844,15 @@ export const pageSections = {
       },
     },
     {
-      id: 'aa-shop',
-      label: 'A&A Shop / Available on Google Play',
+      id: 'aa-store',
+      label: 'A&A Store / Available on Google Play',
       heading: 'From product discovery to a workable order.',
+      cta: {
+        href: 'https://play.google.com/store/apps/details?id=com.aatradesolutions.aacatalog',
+        label: 'Get A&A Store on Google Play',
+      },
       intro:
-        'Built by Yahya Mohamed for A&A Trade Solutions, A&A Shop is available on Google Play. The mobile app and supporting backend connect product browsing, a basket and guest checkout with the business’s sourcing operation.',
+        'Built by Yahya Mohamed for A&A Trade Solutions, A&A Store is available on Google Play. The mobile app and supporting backend connect product browsing, a basket and guest checkout with the business’s sourcing operation.',
       content: {
         type: 'cards',
         items: [
@@ -875,7 +885,7 @@ export const pageSections = {
       heading: 'Expertise is part of the investment.',
       content: {
         type: 'paragraph',
-        body: 'EastGate’s contribution combines Noah’s work establishing operations and training founders in Africa with Yahya’s contracted software delivery, including A&A Shop. The approach keeps practical expertise close to A&A Trade Solutions while developing the founders’ ability to lead its everyday operations.',
+        body: 'EastGate’s contribution combines Noah’s work establishing operations and training founders in Africa with Yahya’s contracted software delivery, including A&A Store. The approach keeps practical expertise close to A&A Trade Solutions while developing the founders’ ability to lead its everyday operations.',
       },
     },
   ],
@@ -937,7 +947,7 @@ export const pageSections = {
       heading: 'Build around the way people work.',
       content: {
         type: 'paragraph',
-        body: 'A&A Shop reflects a specific commercial workflow: discover a product, submit an order and let the team coordinate the next steps. Guest checkout, order records and pricing checks support that process. Our approach to technology starts with the operation it needs to serve.',
+        body: 'A&A Store reflects a specific commercial workflow: discover a product, submit an order and let the team coordinate the next steps. Guest checkout, order records and pricing checks support that process. Our approach to technology starts with the operation it needs to serve.',
       },
     },
     {

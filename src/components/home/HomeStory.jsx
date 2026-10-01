@@ -7,7 +7,6 @@ import VentureCard from '@/components/VentureCard';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   designContent,
-  founderJourney,
   portfolioHighlights,
   valuePillars,
   whatWeDoTabs,
@@ -71,23 +70,23 @@ const HomeStory = () => (
         ))}
       </div>
     </section>
-    <section className="section-space page-gutter journey-section">
-      <div className="journey-intro">
-        <SectionIntro content={designContent.journey} />
-        <ActionLink to={designContent.journey.cta.path}>
-          {designContent.journey.cta.label}
+    <section className="section-space page-gutter criteria-section">
+      <div className="criteria-intro">
+        <SectionIntro content={designContent.criteria} />
+        <ActionLink to={designContent.criteria.cta.path}>
+          {designContent.criteria.cta.label}
         </ActionLink>
       </div>
-      <div className="journey-steps">
-        {founderJourney.map((step, i) => (
-          <FadeIn key={step.title} delay={i * 0.03}>
-            <article className="journey-step">
-              <span className="journey-index">0{i + 1}</span>
+      <div className="criteria-steps">
+        {designContent.criteria.items.map((item, i) => (
+          <FadeIn key={item.title} delay={i * 0.03}>
+            <article className="criteria-step">
+              <span className="criteria-index">0{i + 1}</span>
               <div>
-                <h3>{step.title}</h3>
-                <p>{step.body}</p>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
               </div>
-              <span className="journey-dot" aria-hidden="true" />
+              <span className="criteria-dot" aria-hidden="true" />
             </article>
           </FadeIn>
         ))}

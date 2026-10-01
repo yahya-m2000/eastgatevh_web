@@ -1,4 +1,4 @@
-﻿# Image sources
+# Image sources
 
 The supplied EastGate logos and garden image remain in their original public paths.
 
@@ -15,6 +15,15 @@ Downloaded image URLs:
 
 - https://images.unsplash.com/photo-1744907895363-d351aa6019ef?auto=format&fit=max&w=2400&q=88&fm=jpg
 - https://images.unsplash.com/photo-1702893165913-8b679880bc57?auto=format&fit=max&w=2400&q=88&fm=jpg
+
+## Company logos (About page story)
+
+| Local asset                                  | Source                                                                                                                                                                  |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `public/images/eastern-trade-group-logo.png` | Owner-supplied screen grab of The Eastern Trade Group logo, converted from black-on-white to black on transparent and cropped to equal 24px margins so it sits centred. |
+| `public/images/aa-trade-solutions-logo.png`  | `C:/dev/aagroup-web/public/logo.png` (A&A Trade Solutions), cropped to the artwork and resized to 1200px wide.                                                          |
+
+Step 3 of the story uses the existing `public/logo/1x/full_brand_logo.png`.
 
 ## Favicon typography
 

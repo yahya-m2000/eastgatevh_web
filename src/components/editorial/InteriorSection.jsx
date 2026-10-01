@@ -1,5 +1,6 @@
 import FadeIn from '@/components/motion/FadeIn';
 import ActionLink from '@/components/ActionLink';
+import StoryStages from '@/components/editorial/StoryStages';
 import { designContent } from '@/content/siteContent';
 
 const InteriorSection = ({ section, index = 0 }) => {
@@ -15,7 +16,7 @@ const InteriorSection = ({ section, index = 0 }) => {
           </div>
           {section.intro && <p>{section.intro}</p>}
         </FadeIn>
-        <ContentBlock block={section.content} />
+        <ContentBlock block={section.content} label={section.label} />
         {section.cta && (
           <FadeIn className="editorial-action">
             <ActionLink href={section.cta.href} to={section.cta.path}>
@@ -27,11 +28,15 @@ const InteriorSection = ({ section, index = 0 }) => {
     </section>
   );
 };
-const ContentBlock = ({ block }) => {
+const ContentBlock = ({ block, label }) => {
   if (block.type === 'paragraph')
     return (
       <FadeIn>
-        <p className="editorial-paragraph">{block.body}</p>
+        {[].concat(block.body).map((body) => (
+          <p key={body} className="editorial-paragraph">
+            {body}
+          </p>
+        ))}
       </FadeIn>
     );
   if (block.type === 'cards')
@@ -61,6 +66,12 @@ const ContentBlock = ({ block }) => {
           </FadeIn>
         ))}
       </div>
+    );
+  if (block.type === 'story')
+    return (
+      <FadeIn>
+        <StoryStages items={block.items} label={label} />
+      </FadeIn>
     );
   if (block.type === 'bullets')
     return (
